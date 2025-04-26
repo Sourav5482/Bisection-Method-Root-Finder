@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Bisection Method Root Finder</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Important for mobile responsiveness -->
   <style>
     * {
       margin: 0;
@@ -11,7 +12,7 @@
       font-family: "Poppins", sans-serif;
     }
     body {
-      height: 100vh;
+      min-height: 100vh;
       background: linear-gradient(to right, #6a11cb, #2575fc);
       display: flex;
       justify-content: center;
@@ -25,6 +26,7 @@
       border-radius: 12px;
       box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
       width: 400px;
+      max-width: 100%;
     }
     .container h1 {
       text-align: center;
@@ -63,6 +65,26 @@
     .output p {
       margin-top: 10px;
       font-size: 18px;
+    }
+
+    /* Responsive for mobile */
+    @media (max-width: 500px) {
+      .container {
+        padding: 20px;
+        border-radius: 10px;
+      }
+      body {
+        padding: 10px;
+      }
+      .container h1 {
+        font-size: 22px;
+      }
+      input, button {
+        font-size: 15px;
+      }
+      .output p {
+        font-size: 16px;
+      }
     }
   </style>
 </head>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bisection Method Root Finder</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+    body {
+      height: 100vh;
+      background: linear-gradient(to right, #6a11cb, #2575fc);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      padding: 20px;
+    }
+    .container {
+      background: #1e1e2f;
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      width: 400px;
+    }
+    .container h1 {
+      text-align: center;
+      margin-bottom: 25px;
+      font-size: 26px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+    input {
+      padding: 10px;
+      border: none;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      font-size: 16px;
+    }
+    button {
+      padding: 10px;
+      border: none;
+      border-radius: 8px;
+      background-color: #4facfe;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background-color: #00f2fe;
+    }
+    .output {
+      margin-top: 20px;
+      text-align: center;
+    }
+    .output p {
+      margin-top: 10px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Bisection Method</h1>
+
+  <form id="form1">
+    <input type="text" class="input" placeholder="Enter variable (default x)" value="x">
+    <button type="submit">Set Variable</button>
+  </form>
+
+  <form id="form2">
+    <input type="text" class="eq" placeholder="Enter equation (e.g., x^3-x-11)">
+    <button type="submit">Find Root</button>
+  </form>
+
+  <div class="output" id="outputArea"></div>
+</div>
+
+<script src="main.js"></script>
+
+</body>
+</html>
